@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consigna Ejercicios Clase 22-03</title>
+</head>
+<body>
+    
+    <h4> Ejercicio 1 <br> Generar número aleatorio dentro de un rango</h4>
+    
+    <p>
+        Calcular un número random o aleatorio dentro de un rango en Javascript no es tan trivial
+        como en otros lenguajes.
+    </p> 
+
+    <p>
+        La función que usaremos (Math.random())
+        nos devuelve un número aleatorio con decimales entre 0 y 1.
+    </p>
+
+    <p>
+        Luego nosotros, haciendo uso de sumas y redondeos debemos transformar
+        ese número aleatorio entre 0 y 1 a un número aleatorio entre 25 y 75, por ejemplo.
+    </p>
+
+    <p>
+        Para ello, yo utilizo la fórmula que indico a continuación.
+        La copio, la pego y sustituyo los valores. Es una fórmula fácil de razonar, pero francamente, cuando la necesito, la copio y la pego:
+    </p>
+
+    <p><i>Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;</i></p>
+
+    <p>Como ejemplo, si deseamos generar un número aleatorio entre 10 y 5, la sentencia sería</p>
+    
+    <p><i>Math.floor (Math.random() * (MAX - MIN + 1)) + MIN; </i></p>
+
+
+
+    <p>
+    <h4>Ejercicio 2 </br> Ejercicios números aleatorio</h4>
+    <p>Investigar <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/charAt">https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/charAt</a>
+
+    <p>1. Obtener un número aleatorio entre 5 y 7.</p>
+
+    <p>2. Ejercicio letra aleatoria</p>
+
+    <p>Obtener una letra aleatoria de tu nombre.</p>
+
+    <p>Tendrás que usar los siguientes códigos:</p>
+
+
+    <p><i>
+        //nombre.charAt();</br>
+        //nombre.length;
+    </i></p>
+
+    </p>
+    
+    <h4>Ejercicio 3</h4>
+    <p>
+        Calculamos un número aleatorio en un rango comprendido entre 0 y el número de letras de tu nombre.
+        Utilizamos ese número aleatorio para obtener la letra de tu nombre que ocupa esa posición.
+        Mostramos la letra en la pagina.
+    </p>
+    <p align="center" style="font-size: large;">
+        <a href="./index.html">⬅ Volver</a>
+    </p>
+</body>
+</html>
